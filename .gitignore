@@ -1,6 +1,7 @@
 messages.htm
 messages.pickle
 messages.json
+messages.csv
 .idea/
 __pycache__/
-*.csv
+
