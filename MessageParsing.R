@@ -28,7 +28,7 @@ include <- function (theList, toMatch){
 }
 
 # Create vector of desired message threads
-include(convos,"Dave Perry")
+include(convos,"xxx")
 convo_idx<-c(70, 95, 99, 100, 241, 243, 251, 252, 253, seq(254,283), 301)
 
 # Subset original messages list
@@ -89,11 +89,11 @@ dygraph(mess_chart) %>%
   
 
 ############ Word Cloud work
-zerg<-filter(messages, sender=="Chris Nash"|sender=="Malcolm Charles")
+zerg<-filter(messages, sender=="xxx"|sender=="xxx")
 protoss<-group_by(messages, sender) %>%
   summarise(SC2 = paste(text, collapse = " "))
 
-text<-as.character(filter(protoss, sender=="Malcolm Charles") %>% select(SC2))
+text<-as.character(filter(protoss, sender=="xxx") %>% select(SC2))
 
 docs <- Corpus(VectorSource(text))
 toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))

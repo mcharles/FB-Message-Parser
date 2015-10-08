@@ -3,3 +3,4 @@ messages.pickle
 messages.json
 .idea/
 __pycache__/
+*.csv
